@@ -80,6 +80,10 @@ This project demonstrates a modular approach to deploying AWS Glue ETL pipelines
 - The ETL job transforms the input CSV into Parquet format and writes it to the output location.
 - The Glue crawler updates the Data Catalog with the schema of the output data.
 - The Athena S3 bucket will store the Athena query results
+- After the Terraform deployment navigate to the AWS Glue Console and run the ETL job.
+- Then run the Crawler
+- Next, navigate to the Athena service and run a query on the Crawler output
+- After you add new lines to the CSV file you can run S3 sync with the utilites/scripts/csv_to_s3_sync.sh
 
 ---
 
