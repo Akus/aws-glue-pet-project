@@ -1,0 +1,6 @@
+# Ignore Terraform state files
+*.tfstate
+*.tfstate.*
+
+# Ignore Terraform provider/plugins and local state
+.terraform/
