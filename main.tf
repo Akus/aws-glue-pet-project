@@ -35,6 +35,11 @@ module "analytics" {
   # output_prefix is defaulted to "output/", override if needed
 }
 
+module "automation" {
+  source       = "./modules/automation"
+  bucket_name  = module.prerequisites.bucket_name  
+}
+
 output "bucket_name" {
   value = module.prerequisites.bucket_name
 }

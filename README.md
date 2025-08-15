@@ -85,6 +85,16 @@ This project demonstrates a modular approach to deploying AWS Glue ETL pipelines
 - Next, navigate to the Athena service and run a query on the Crawler output
 - After you add new lines to the CSV file you can run S3 sync with the utilites/scripts/csv_to_s3_sync.sh
 - you can sync the CSV file with Terraform too. Just update the CSV file and run terraform plan
+- zip the python files for the step function and move them to the root folder:
+```bash
+cd modules/automation/
+zip find_latest.zip find_latest.py
+zip copy_file.zip copy_file.py
+zip trigger_stepfn.zip trigger_stepfn.py
+mv *.zip ../../
+cd ../..
+terraform plan
+```
 
 ---
 

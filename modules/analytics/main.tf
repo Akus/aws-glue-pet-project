@@ -8,7 +8,7 @@ resource "aws_glue_crawler" "pet_adoption_output" {
   database_name = aws_glue_catalog_database.pet_adoption_db.name
 
   s3_target {
-    path = "s3://${var.bucket_name}/${var.output_prefix}"
+    path = "s3://${var.bucket_name}/${var.output_prefix}/latest/"
   }
 }
 

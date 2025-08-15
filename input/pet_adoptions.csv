@@ -4,3 +4,5 @@ PetID,PetType,Name,Age,Adopted
 3,Dog,Bella,2,Yes
 4,Bird,Kiwi,1,No
 5,Dog,Rex,11,No
+6,Dog,Hector,1,No
+7,Cat,Monty,10,No
