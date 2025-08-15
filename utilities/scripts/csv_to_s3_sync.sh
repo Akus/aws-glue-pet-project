@@ -1,0 +1,1 @@
+aws s3 sync ../../input/ s3://glue-modular-demo-pure-kit/input/

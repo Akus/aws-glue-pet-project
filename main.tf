@@ -26,7 +26,7 @@ module "prerequisites" {
   source         = "./modules/prerequisites"
   bucket_name    = local.bucket_name
   etl_script_file = "${path.module}/pet_adoption_etl.py.tmpl"
-  csv_file        = "${path.module}/pet_adoptions.csv"
+  csv_file        = "${path.module}/input/pet_adoptions.csv"
 }
 
 module "analytics" {
