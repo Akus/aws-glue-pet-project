@@ -84,6 +84,7 @@ This project demonstrates a modular approach to deploying AWS Glue ETL pipelines
 - Then run the Crawler
 - Next, navigate to the Athena service and run a query on the Crawler output
 - After you add new lines to the CSV file you can run S3 sync with the utilites/scripts/csv_to_s3_sync.sh
+- you can sync the CSV file with Terraform too. Just update the CSV file and run terraform plan
 
 ---
 
