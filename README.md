@@ -21,10 +21,13 @@ This project demonstrates a modular approach to deploying AWS Glue ETL pipelines
 ├── variables.tf                   # Input variables
 ├── outputs.tf                     # Outputs from the deployment
 ├── pet_adoption_etl.py.tmpl       # Templated ETL script (rendered by Terraform)
-├── pet_adoptions.csv              # Example input data
+├── input/
+│   └── pet_adoptions.csv              # Example input data
 ├── modules/
 │   ├── prerequisites/             # Sets up S3, IAM, Glue job, uploads scripts/data
 │   └── analytics/                 # Sets up Glue crawler
+├── utilites/scripts/
+│   └── csv_to_s3_sync.sh
 └── README.md                      # This file
 ```
 
